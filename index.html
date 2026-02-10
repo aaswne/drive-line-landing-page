@@ -11,27 +11,37 @@
     />
     <meta name="theme-color" content="#061019" />
 
-    <meta property="og:title" content="Drive Line | 3D Wheel Alignment & Emission Testing" />
-    <meta property="og:description" content="Feroke, Kozhikode • Accurate alignment • Quick emission testing" />
+    <meta
+      property="og:title"
+      content="Drive Line | 3D Wheel Alignment & Emission Testing"
+    />
+    <meta
+      property="og:description"
+      content="Feroke, Kozhikode • Accurate alignment • Quick emission testing"
+    />
     <meta property="og:type" content="website" />
 
     <script type="application/ld+json">
       {
-        "@context":"https://schema.org",
-        "@type":"AutoRepair",
-        "name":"Drive Line",
-        "description":"3D Wheel Alignment & Vehicle Emission Testing",
-        "address":{
-          "@type":"PostalAddress",
-          "streetAddress":"Ambhalangadi, Feroke",
-          "addressLocality":"Kozhikode",
-          "addressRegion":"Kerala",
-          "postalCode":"673631",
-          "addressCountry":"IN"
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "Drive Line",
+        "description": "3D Wheel Alignment & Vehicle Emission Testing",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ambhalangadi, Feroke",
+          "addressLocality": "Kozhikode",
+          "addressRegion": "Kerala",
+          "postalCode": "673631",
+          "addressCountry": "IN"
         },
-        "telephone":"+919747470828",
-        "areaServed":"Feroke, Kozhikode",
-        "aggregateRating":{"@type":"AggregateRating","ratingValue":"3.7","reviewCount":"13"}
+        "telephone": "+919747470828",
+        "areaServed": "Feroke, Kozhikode",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "3.7",
+          "reviewCount": "13"
+        }
       }
     </script>
 
@@ -47,7 +57,9 @@
             <span class="logo">🛞</span>
             <span>
               Drive Line
-              <small data-i18n="subline">3D Wheel Alignment • Emission Testing</small>
+              <small data-i18n="subline"
+                >3D Wheel Alignment • Emission Testing</small
+              >
             </span>
           </a>
 
@@ -68,13 +80,24 @@
             </div>
 
             <!-- Removed top call button (you already have bottom bar) -->
-            <button class="btn menuBtn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav" type="button">
+            <button
+              class="btn menuBtn"
+              id="menuBtn"
+              aria-expanded="false"
+              aria-controls="mobileNav"
+              type="button"
+            >
               ☰
             </button>
           </div>
         </div>
 
-        <div id="mobileNav" class="mobileNav" role="navigation" aria-label="Mobile navigation">
+        <div
+          id="mobileNav"
+          class="mobileNav"
+          role="navigation"
+          aria-label="Mobile navigation"
+        >
           <a href="#services" data-i18n="nav_services">Services</a>
           <a href="#about" data-i18n="nav_about">About</a>
           <a href="#reviews" data-i18n="nav_reviews">Reviews</a>
@@ -89,8 +112,12 @@
         <div class="gridHero">
           <div class="card reveal">
             <div class="chips">
-              <span class="chip">📍 <span data-i18n="location">Ambhalangadi, Feroke</span></span>
-              <span class="chip">✅ <span data-i18n="quick">Quick Service</span></span>
+              <span class="chip"
+                >📍 <span data-i18n="location">Ambhalangadi, Feroke</span></span
+              >
+              <span class="chip"
+                >✅ <span data-i18n="quick">Quick Service</span></span
+              >
             </div>
 
             <h1 data-i18n="hero_title">
@@ -98,13 +125,20 @@
             </h1>
 
             <p class="lead" data-i18n="hero_desc">
-              Accurate alignment for smooth driving and less tyre wear. Quick emission testing with clear results.
+              Accurate alignment for smooth driving and less tyre wear. Quick
+              emission testing with clear results.
             </p>
 
             <div class="heroActions">
-              <a class="btn primary" href="tel:+919747470828">📞 <span data-i18n="call_now">Call now</span></a>
-              <a class="btn ghost" href="#contact">📍 <span data-i18n="directions">Directions</span></a>
-              <a class="btn ghost" href="#services">⚙️ <span data-i18n="see_services">See services</span></a>
+              <a class="btn primary" href="tel:+919747470828"
+                >📞 <span data-i18n="call_now">Call now</span></a
+              >
+              <a class="btn ghost" href="#contact"
+                >📍 <span data-i18n="directions">Directions</span></a
+              >
+              <a class="btn ghost" href="#services"
+                >⚙️ <span data-i18n="see_services">See services</span></a
+              >
             </div>
 
             <div class="miniGrid">
@@ -138,35 +172,77 @@
 
               <div class="divider"></div>
 
-              <div class="row">
+              <div class="row wa-row">
                 <div class="icon">💬</div>
-                <div>
-                  <h3 data-i18n="whatsapp">WhatsApp</h3>
-                  <p data-i18n="wa_desc">Message us to confirm timing or ask about your vehicle issue.</p>
-                  <a
-                    class="btn primary"
-                    style="padding:10px 12px"
-                    target="_blank"
-                    rel="noopener"
-                    href="https://wa.me/919747470828?text=Hi%20Drive%20Line,%20I%20need%203D%20wheel%20alignment%20or%20emission%20testing.%20My%20vehicle%20is%20____.%20When%20can%20I%20come?"
-                  >
-                    💬 <span data-i18n="wa_btn">WhatsApp</span>
-                  </a>
+
+                <div class="wa-content">
+                  <h3>WhatsApp Booking / Complaint</h3>
+                  <p>
+                    Send your details on WhatsApp to confirm timing or explain
+                    your vehicle issue.
+                  </p>
+
+                  <form id="waForm" class="wa-form">
+                    <label class="field">
+                      <span>Customer Name</span>
+                      <input id="custName" type="text" required />
+                    </label>
+
+                    <label class="field">
+                      <span>Phone Number</span>
+                      <input id="custPhone" type="tel" required />
+                    </label>
+
+                    <label class="field">
+                      <span>Vehicle Name / Model</span>
+                      <input id="vehicleName" type="text" required />
+                    </label>
+
+                    <label class="field">
+                      <span>Select Service</span>
+                      <select id="serviceSelect" required>
+                        <option value="" disabled selected>
+                          Choose service
+                        </option>
+                        <option>3D Wheel Alignment</option>
+                        <option>Vehicle Emission Testing (PUC)</option>
+                        <option>Wheel Balancing</option>
+                        <option>Tyre Replacement</option>
+                        <option>Puncture Repair</option>
+                        <option>General Inspection</option>
+                      </select>
+                    </label>
+
+                    <label class="field">
+                      <span>Issue / Complaint Description</span>
+                      <textarea id="issueDesc" rows="3" required></textarea>
+                    </label>
+
+                    <button
+                      class="btn primary"
+                      type="submit"
+                      style="padding: 10px 12px"
+                    >
+                      💬 Send to WhatsApp
+                    </button>
+                  </form>
                 </div>
               </div>
             </div>
-
+<div class="spacer"></div>
             <div class="box reveal">
               <div class="row">
                 <div class="icon">✅</div>
                 <div>
                   <h3 data-i18n="process">Simple process</h3>
-                  <p data-i18n="process_desc">Check → Explain → Service → Guidance. No confusion.</p>
+                  <p data-i18n="process_desc">
+                    Check → Explain → Service → Guidance. No confusion.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </main>
@@ -181,9 +257,14 @@
 
         <div class="cards3">
           <div class="service reveal">
-            <span class="badge">🛞 <span data-i18n="s1_badge">3D Wheel Alignment</span></span>
+            <span class="badge"
+              >🛞 <span data-i18n="s1_badge">3D Wheel Alignment</span></span
+            >
             <h3 data-i18n="s1_title">Fix steering pull & tyre wear</h3>
-            <p data-i18n="s1_desc">Best if your vehicle pulls to one side, vibrates, or tyres wear unevenly.</p>
+            <p data-i18n="s1_desc">
+              Best if your vehicle pulls to one side, vibrates, or tyres wear
+              unevenly.
+            </p>
             <ul>
               <li data-i18n="s1_li1">Toe / Camber / Caster adjustment</li>
               <li data-i18n="s1_li2">Handling & stability improvement</li>
@@ -192,9 +273,14 @@
           </div>
 
           <div class="service reveal delay-1">
-            <span class="badge">🧪 <span data-i18n="s2_badge">Emission Testing</span></span>
+            <span class="badge"
+              >🧪 <span data-i18n="s2_badge">Emission Testing</span></span
+            >
             <h3 data-i18n="s2_title">Quick smoke test with clear result</h3>
-            <p data-i18n="s2_desc">Fast emission test for petrol/diesel vehicles with guidance if needed.</p>
+            <p data-i18n="s2_desc">
+              Fast emission test for petrol/diesel vehicles with guidance if
+              needed.
+            </p>
             <ul>
               <li data-i18n="s2_li1">Petrol & diesel testing</li>
               <li data-i18n="s2_li2">Clear explanation of result</li>
@@ -203,9 +289,13 @@
           </div>
 
           <div class="service reveal delay-2">
-            <span class="badge">🔧 <span data-i18n="s3_badge">Basic Checks</span></span>
+            <span class="badge"
+              >🔧 <span data-i18n="s3_badge">Basic Checks</span></span
+            >
             <h3 data-i18n="s3_title">Small checks that save money</h3>
-            <p data-i18n="s3_desc">Quick inspection to reduce repeat issues after alignment.</p>
+            <p data-i18n="s3_desc">
+              Quick inspection to reduce repeat issues after alignment.
+            </p>
             <ul>
               <li data-i18n="s3_li1">Tyre wear check</li>
               <li data-i18n="s3_li2">Basic suspension observation</li>
@@ -226,8 +316,9 @@
 
         <div class="card reveal">
           <p class="lead" data-i18n="about_desc">
-            Drive Line is a local service center focused on accurate 3D wheel alignment and quick vehicle emission testing.
-            We keep it simple: diagnose, explain, fix, and guide you.
+            Drive Line is a local service center focused on accurate 3D wheel
+            alignment and quick vehicle emission testing. We keep it simple:
+            diagnose, explain, fix, and guide you.
           </p>
         </div>
       </div>
@@ -246,12 +337,15 @@
             <div class="quoteTop">
               <div>
                 <div class="name">Sujith A N</div>
-                <div class="meta" data-i18n="r1_meta">Local Guide • 3 years ago</div>
+                <div class="meta" data-i18n="r1_meta">
+                  Local Guide • 3 years ago
+                </div>
               </div>
               <div class="meta">⭐</div>
             </div>
             <p data-i18n="r1_text">
-              After alignment tyres getting worn from one side tried once more let's see what's happening
+              After alignment tyres getting worn from one side tried once more
+              let's see what's happening
             </p>
           </div>
 
@@ -299,8 +393,13 @@
       <div class="wrap">
         <div class="footRow">
           <div>
-            <strong style="color:var(--text)">Drive Line</strong>
-            <span class="muted"> — <span data-i18n="footer_line">3D Wheel Alignment & Emission Testing</span></span>
+            <strong style="color: var(--text)">Drive Line</strong>
+            <span class="muted">
+              —
+              <span data-i18n="footer_line"
+                >3D Wheel Alignment & Emission Testing</span
+              ></span
+            >
           </div>
           <div class="muted">© <span id="year"></span> Drive Line • Feroke</div>
         </div>
@@ -310,15 +409,21 @@
     <!-- ================= BOTTOM ACTION BAR ================= -->
     <div class="bottomBar" aria-label="Quick actions">
       <div class="inner">
-        <a class="primary" href="tel:+919747470828">📞 <span data-i18n="call">Call</span></a>
+        <a class="primary" href="tel:+919747470828"
+          >📞 <span data-i18n="call">Call</span></a
+        >
         <a
           href="https://wa.me/919747470828?text=Hi%20Drive%20Line,%20I%20need%203D%20wheel%20alignment%20or%20emission%20testing.%20My%20vehicle%20is%20____.%20When%20can%20I%20come?"
-          target="_blank" rel="noopener"
-        >💬 <span data-i18n="wa_btn">WhatsApp</span></a>
+          target="_blank"
+          rel="noopener"
+          >💬 <span data-i18n="wa_btn">WhatsApp</span></a
+        >
         <a
           href="https://www.google.com/maps/search/?api=1&query=Drive%20Line%203D%20Wheel%20Alignment%20Feroke"
-          target="_blank" rel="noopener"
-        >📍 <span data-i18n="directions">Directions</span></a>
+          target="_blank"
+          rel="noopener"
+          >📍 <span data-i18n="directions">Directions</span></a
+        >
       </div>
     </div>
 

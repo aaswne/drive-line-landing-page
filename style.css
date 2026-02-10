@@ -582,3 +582,32 @@ footer{
     flex: 1 1 100%;
   }
 }
+
+.wa-form {
+  max-width: 520px;
+  margin-top: 10px;
+}
+
+.field {
+  display: block;
+  margin: 10px 0;
+}
+
+.field span {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,.15);
+}
+
+.spacer{
+  height: 30px;
+}

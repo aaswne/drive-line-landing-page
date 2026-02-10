@@ -120,3 +120,29 @@ form?.addEventListener("submit", async (e) => {
     openWhatsApp();
   }
 });
+
+document.getElementById("waForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = custName.value.trim();
+  const phone = custPhone.value.trim();
+  const vehicle = vehicleName.value.trim();
+  const service = serviceSelect.value;
+  const issue = issueDesc.value.trim();
+
+  const waNumber = "919747470828";
+
+  const msg =
+`Hi Drive Line,
+
+Customer Name: ${name}
+Phone: ${phone}
+Vehicle: ${vehicle}
+Service: ${service}
+Issue: ${issue}`;
+
+  window.open(
+    "https://wa.me/" + waNumber + "?text=" + encodeURIComponent(msg),
+    "_blank"
+  );
+});
