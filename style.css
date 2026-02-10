@@ -426,3 +426,44 @@ footer{
   background: linear-gradient(135deg, rgba(34,211,238,.18), rgba(251,191,36,.14));
   border-color: rgba(34,211,238,.22);
 }
+
+
+/* ======================
+   HEADER RESPONSIVE FIX (NO DESIGN CHANGE)
+   Paste at END of style.css
+====================== */
+
+/* Allow brand + right area to shrink/wrap instead of overflowing */
+.nav { flex-wrap: wrap; }
+.brand { min-width: 0; } /* remove forced width that causes overflow */
+.brand span { min-width: 0; }
+
+/* prevent long subtitle from pushing layout */
+.brand small{
+  max-width: 42vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* right section can wrap on small screens */
+.right{
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* keep buttons from forcing overflow */
+.btn{ max-width: 100%; }
+
+/* Make header layout stable on very small screens */
+@media (max-width: 520px){
+  .wrap{ padding: 0 14px; }               /* slightly tighter padding */
+  .logo{ width:38px; height:38px; border-radius:14px; }
+  .btn{ padding: 10px 12px; border-radius: 12px; }
+  .lang button{ padding: 8px 10px; }
+}
+
+/* Optional: if still overflowing due to Call button text */
+@media (max-width: 380px){
+  .btn.primary span{ display:none; } /* hides "Call" text, keeps icon */
+}
